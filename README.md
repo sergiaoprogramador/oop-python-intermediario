@@ -11,3 +11,6 @@ Nesse repositório dei uma revisada de como o python trabalha com os seguintes c
   - Polimofrismo
   - Relacionamento é um (Herança)
   - Representação textual __str__ built-in function
+  - Herança de um tipo built-in (nativo)
+  - Vantagens de herança iterável
+  - Desvantagens de herança de classes desconhecidas
