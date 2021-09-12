@@ -44,12 +44,10 @@ class Playlist:
         self.__nome = nome
         self.__programas = programas
 
-    @property
-    def listagem(self):
-        return self.__programas
+    def __getitem__(self, item):
+        return self.__programas[item]
 
-    @property
-    def tamanho(self):
+    def __len__(self):
         return len(self.__programas)
 
 vingadores = Filme('vingadores - guerra infinita', 2018, 160)
@@ -73,9 +71,9 @@ vingadores.dar_likes()
 filmes_e_series = [vingadores, atlanta, demolidor, todo_mundo_em_panico]
 playlist_fim_de_semana = Playlist("Fim de semana", filmes_e_series)
 
-print(f'Tamanho da playlist: {len(playlist_fim_de_semana.listagem)}')
+print(f'Tamanho da playlist: {len(playlist_fim_de_semana)}')
 
-for programa in playlist_fim_de_semana.listagem:
+for programa in playlist_fim_de_semana:
     print(programa)
 
 print(demolidor in playlist_fim_de_semana)

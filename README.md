@@ -14,3 +14,7 @@ Nesse repositório dei uma revisada de como o python trabalha com os seguintes c
   - Herança de um tipo built-in (nativo)
   - Vantagens de herança iterável
   - Desvantagens de herança de classes desconhecidas
+  - Duck typing
+  - Python data (object) model (__init__, __str__, __repr__, __contains__, __iter__, __len__, __getitem__, __add__, __sub__, __mul__, __mod__)
+  - Dunder methods
+  - Uso de ABCs (Abstract Base Class)
